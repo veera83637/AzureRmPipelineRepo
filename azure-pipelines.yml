@@ -28,6 +28,6 @@ steps:
     resourceGroupName: 'Test1'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'C:\Veera\ARM-template\Rg1.json'
-    csmParametersFileLink: 'C:\Veera\ARM-template\Rg1.parameters.json'
+    csmFileLink: 'https://github.com/veera83637/AzureRmPipelineRepo/blob/34a0813ddba59bbbc73f48bb8f5ba94a4e057dd2/Rg1.json'
+    csmParametersFileLink: 'https://github.com/veera83637/AzureRmPipelineRepo/blob/34a0813ddba59bbbc73f48bb8f5ba94a4e057dd2/Rg1.parameters.json'
     deploymentMode: 'Validation'
