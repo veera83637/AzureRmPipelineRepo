@@ -6,6 +6,19 @@ pool:
   vmImage: windows-latest
 
 steps:
+# - task: AzureResourceManagerTemplateDeployment@3
+#   inputs:
+#     deploymentScope: 'Resource Group'
+#     azureResourceManagerConnection: 'Azure resouce Manager Connection'
+#     subscriptionId: 'debe54b9-5508-4aaa-991c-8e0b4b35f940'
+#     action: 'Create Or Update Resource Group'
+#     resourceGroupName: 'Test1'
+#     location: 'East US'
+#     templateLocation: 'URL of the file'
+#     csmFileLink: 'https://github.com/veera83637/AzureRmPipelineRepo/blob/32ef1e0fde0ab531c3eb91b467f87ff45e77007e/Rg1.json'
+#     csmParametersFileLink: 'https://github.com/veera83637/AzureRmPipelineRepo/blob/32ef1e0fde0ab531c3eb91b467f87ff45e77007e/Rg1.parameters.json'
+#     deploymentMode: 'Incremental'
+# -  task:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
@@ -15,6 +28,6 @@ steps:
     resourceGroupName: 'Test1'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/veera83637/AzureRmPipelineRepo/blob/32ef1e0fde0ab531c3eb91b467f87ff45e77007e/Rg1.json'
-    csmParametersFileLink: 'https://github.com/veera83637/AzureRmPipelineRepo/blob/32ef1e0fde0ab531c3eb91b467f87ff45e77007e/Rg1.parameters.json'
-    deploymentMode: 'Incremental'
+    csmFileLink: 'C:\Veera\ARM-template\Rg1.json'
+    csmParametersFileLink: 'C:\Veera\ARM-template\Rg1.parameters.json'
+    deploymentMode: 'Validation'
